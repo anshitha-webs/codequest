@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CodeQuest | Learn. Code. Conquer.</title>
+
+<style>
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #10111f;
+    color: white;
+    line-height: 1.6;
+}
+
+header {
+    padding: 20px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    background: #1c1d32;
+}
+
+.logo {
+    color: #a78bfa;
+    font-size: 26px;
+    font-weight: bold;
+}
+
+nav a {
+    color: #e5e7eb;
+    text-decoration: none;
+    margin-left: 20px;
+}
+
+nav a:hover {
+    color: #c4b5fd;
+}
+
+.hero {
+    min-height: 75vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 50px 20px;
+    background: radial-gradient(circle at top, #302052, #10111f 65%);
+}
+
+.badge {
+    display: inline-block;
+    background: #292044;
+    color: #c4b5fd;
+    padding: 8px 16px;
+    border-radius: 25px;
+    margin-bottom: 22px;
+}
+
+.hero h1 {
+    font-size: clamp(38px, 6vw, 65px);
+    line-height: 1.2;
+    max-width: 850px;
+}
+
+.hero h1 span {
+    color: #a78bfa;
+}
+
+.hero p {
+    max-width: 650px;
+    margin: 22px 0;
+    color: #c9c9dc;
+    font-size: 18px;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-top: 15px;
+}
+
+.button {
+    display: inline-block;
+    padding: 13px 24px;
+    border-radius: 9px;
+    background: #8b5cf6;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.2s;
+}
+
+.button:hover {
+    background: #6d28d9;
+    transform: translateY(-2px);
+}
+
+.secondary {
+    background: transparent;
+    border: 1px solid #8b5cf6;
+}
+
+.secondary:hover {
+    background: #292044;
+}
+
+section {
+    padding: 65px 8%;
+    text-align: center;
+}
+
+section h2 {
+    font-size: 32px;
+    color: #c4b5fd;
+    margin-bottom: 15px;
+}
+
+.section-text {
+    color: #c9c9dc;
+    max-width: 700px;
+    margin: 0 auto 30px;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 22px;
+    margin-top: 35px;
+}
+
+.card {
+    background: #1c1d32;
+    border: 1px solid #393953;
+    border-radius: 14px;
+    padding: 28px 22px;
+    text-align: left;
+}
+
+.card h3 {
+    color: #a78bfa;
+    margin-bottom: 12px;
+}
+
+.card p {
+    color: #c9c9dc;
+}
+
+.access {
+    background: #17182a;
+}
+
+footer {
+    padding: 25px;
+    text-align: center;
+    color: #aaaac2;
+    border-top: 1px solid #292a43;
+}
+
+@media (max-width: 600px) {
+    header {
+        gap: 12px;
+    }
+
+    nav a {
+        margin-left: 0;
+        margin-right: 12px;
+    }
+
+    .hero h1 {
+        font-size: 38px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <div class="logo">⚔ CodeQuest</div>
+
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#features">Features</a>
+        <a href="#access">Get Started</a>
+    </nav>
+</header>
+
+<main>
+
+<section class="hero" id="home">
+    <div class="badge">Your Coding Adventure Starts Here</div>
+
+    <h1>Learn to Code.<br><span>Play to Win.</span></h1>
+
+    <p>
+        Turn programming practice into an adventure.
+        Solve coding challenges, complete missions, earn XP,
+        level up, and compete with other learners.
+    </p>
+
+    <div class="buttons">
+        <a class="button" href="reg.jsp">Start Your Quest</a>
+        <a class="button secondary" href="login.jsp">Student Login</a>
+    </div>
+</section>
+
+<section id="features">
+    <h2>Explore CodeQuest</h2>
+
+    <p class="section-text">
+        Learn programming through interactive multiple-choice
+        missions and track your progress as you improve.
+    </p>
+
+    <div class="cards">
+
+        <div class="card">
+            <h3>🎯 Coding Missions</h3>
+            <p>
+                Answer programming questions and test your
+                understanding one challenge at a time.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>⚡ XP and Levels</h3>
+            <p>
+                Earn experience points for correct answers
+                and progress through levels.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>🏆 Leaderboard</h3>
+            <p>
+                Compare XP with other registered students
+                and see how you rank.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>🛠 Admin Management</h3>
+            <p>
+                Administrators can create programming
+                questions and manage learning missions.
+            </p>
+        </div>
+
+    </div>
+</section>
+
+<section class="access" id="access">
+    <h2>Ready to Begin?</h2>
+
+    <p class="section-text">
+        Choose how you want to enter CodeQuest.
+    </p>
+
+    <div class="buttons">
+        <a class="button" href="reg.jsp">Student Registration</a>
+        <a class="button secondary" href="login.jsp">Student Login</a>
+        <a class="button secondary" href="admin-login.jsp">Admin Login</a>
+    </div>
+</section>
+
+</main>
+
+<footer>
+  
+    © 2026 CodeQuest. All Rights Reserved. | Developed by Anshitha Dumpala
+
+</footer>
+
+</body>
+</html>
